@@ -1,0 +1,23 @@
+@import '../../../sass/mixin.scss';
+@import '../../../sass/variable.scss';
+
+
+.scheduled-payment-container{
+    .scheduled-payment{
+        .head{
+            h3{
+            @include font-size($small-font-size)
+            }
+            margin-bottom: 2rem;
+        }
+        .content{
+           display: flex;
+           overflow: hidden;
+        //   flex-direction: column;
+        //    @include device(xl){
+        //     flex-direction: row;
+        //    }
+          
+        }
+    }
+}

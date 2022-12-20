@@ -1,0 +1,47 @@
+
+@import '../../../../sass/mixin.scss';
+@import '../../../../sass/variable.scss';
+
+.card-container{
+  display: flex;
+  &:not(:last-child){
+      margin-bottom: 2rem;
+
+  }
+
+  justify-content: space-between;
+   .detials{
+    display: flex;
+    align-items: center;
+    .icon{
+        margin-right: 2rem;
+        background-color: $side-navigation-color;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow:0px 10px 10px -4px rgba(0,0,0,.2);
+
+    }
+    .content{
+        h3{
+
+            @include font-size($small-font-size);
+            font-weight: $regular;
+        }
+        p{
+            @include font-size($extra-small-font-size);
+            color:$font-grey-color
+
+        }
+    }
+
+   }
+   .amount{
+    display: flex;
+    align-items: center;
+    p{
+        @include font-size($regular-font-size);
+        margin-right: 2rem;
+
+    }
+   }
+}

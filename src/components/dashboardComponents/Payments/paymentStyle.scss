@@ -1,0 +1,72 @@
+@import '../../../sass/mixin.scss';
+@import '../../../sass/variable.scss';
+
+.payment-container {
+  margin-bottom: 4rem;
+
+  .payment {
+    .head {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        @include font-size($small-font-size)
+      }
+    }
+
+    .content {
+      display: flex;
+
+      .add-payment,
+      .recent-payments {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &:not(:last-child) {
+          margin-right: 2%;
+        }
+
+         @include device(md){
+          width: 7rem;
+          height: 7rem;
+         }
+      }
+
+      .add-payment {
+        background-color: $common-color;
+        color: $side-navigation-color;
+        cursor: pointer;
+        transition: all .2s ease;
+
+        &:hover {
+          background-color: $font-grey-color;
+        }
+      }
+
+      .recent-payments {
+
+        img {
+          width: 6rem;
+          height: 6rem;
+          object-fit: cover;
+          transition: all .5s ease;
+          filter: saturate(0);
+
+          @include device(md){
+            width: 7rem;
+            height: 7rem;
+           }
+          &:hover {
+            filter: saturate(1);
+          }
+
+        }
+      }
+    }
+
+  }
+}

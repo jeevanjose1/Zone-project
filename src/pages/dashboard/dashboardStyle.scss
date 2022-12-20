@@ -1,0 +1,75 @@
+@import '../../sass/mixin.scss';
+@import '../../sass/variable.scss';
+
+.dashboard {
+    padding: 2rem;
+    display: flex;
+    position: relative;
+    gap: 7%;
+    margin: 0 2%;
+    margin-bottom: 5rem;
+
+
+    @include device(xxl) {
+        margin-left: calc(40rem - 2%);
+    }
+
+    .dashboard-container {
+        margin-top: 10rem;
+        flex: 1;
+        width: 100%;
+
+        .dasboard-title {
+            margin-bottom: 3rem;
+
+            h4 {
+                @include font-size($medium-font-size);
+                font-weight: $medium;
+            }
+        }
+
+        .dashboard-content {
+            width: 100%;
+            display: flex;
+            gap: 6%;
+            flex-direction: column;
+
+            @include device(lg) {
+                flex-direction: row;
+
+            }
+
+            .left-side-content {
+
+                width: 100%;
+                margin-bottom: 5rem;
+
+                @include device(lg) {
+                    width: 50%;
+                    margin-bottom: 0;
+                }
+
+                @include device(xxxl) {
+                    width: 45%;
+
+                }
+
+            }
+
+            .right-side-content {
+                width: 100%;
+
+                @include device(lg) {
+                    width: 50%;
+
+                }
+
+                @include device(xxxl) {
+                    width: 45%;
+
+                }
+
+            }
+        }
+    }
+}

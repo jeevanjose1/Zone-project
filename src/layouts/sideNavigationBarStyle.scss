@@ -1,0 +1,226 @@
+@import '../sass/variable.scss';
+@import '../sass/mixin.scss';
+
+
+
+
+
+
+
+.mobile-menu {
+    width: 4rem;
+    height: 4rem;
+    background-color: $side-navigation-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 99999;
+    box-shadow: -1px 6px 20px 5px rgba(0, 0, 0, 0.09);
+    transition: all .2s ease;
+
+    &:hover  .m-line{
+       &:first-child{
+        width: 1.5rem;
+       }
+    }
+    &:hover {
+        top: 2.5rem;
+
+    }
+
+
+    cursor: pointer;
+
+    @include device(xxl) {
+        display: none;
+    }
+
+    .m-line {
+        width: 2rem;
+        height: 1px;
+        background-color: black;
+        transition: all .2s ease;
+
+
+        &:not(:last-child) {
+            margin-bottom: .4rem;
+        }
+    }
+
+}
+
+.side-nav-active {
+    width: 30rem !important;
+    translate: 0% 0 !important;
+    transition: all .4s ease;
+}
+
+.side-navigation {
+    width: 30rem;
+
+    border-radius: 1.5rem;
+    height: 93vh !important;
+    translate: -120% 0;
+    overflow: hidden;
+    transition: all .4s ease;
+    position: fixed;
+    left: 2rem;
+    z-index: 9999;
+    box-shadow: 7px 3px 48px -36px rgba(0, 0, 0, 0.25);
+
+    @include device(xxl) {
+        translate: 0 0;
+    }
+
+
+
+
+    .side-navigation-container {
+        height: 100%;
+        border-radius: 1.5rem;
+        background-color: $side-navigation-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 2rem 1rem;
+
+
+        .top-section {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            flex: .5;
+
+            .logo {
+
+                width: 8rem;
+                margin-bottom: 2rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .user-detials {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 4rem;
+
+                .profile-picture {
+                    width: 6rem;
+                    height: 6rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+
+                    img {
+                        width: 100%;
+
+                    }
+                }
+
+                .detials {
+                    span {
+                        @include font-size($extra-small-font-size);
+                        color: $font-grey-color;
+                        font-weight: $medium;
+                        margin-bottom: 2rem;
+                    }
+
+                    h3 {
+                        @include font-size($small-font-size);
+                    }
+                }
+
+
+            }
+
+            .budget {
+                margin-bottom: 2rem;
+
+                .count {
+                    @include font-size($medium-font-size);
+                    font-weight: $regular;
+
+                }
+
+                span {
+                    @include font-size($extra-small-font-size);
+                    color: $font-grey-color;
+                    font-weight: $medium;
+                    margin-bottom: 2rem;
+                }
+            }
+
+
+        }
+
+        .navigation {
+            flex: .25;
+
+            .navigation-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: 100%;
+
+                .list {
+
+                    .navigation-link {
+
+                        transition: color .2s ease;
+
+                        .nav-icons {
+                            margin-right: 1rem;
+                            width: 2rem;
+                        }
+
+                        span {
+
+                            font-weight: $semiBold;
+                            @include font-size($extra-small-font-size);
+                        }
+
+                        &:hover {
+                            color: $font-grey-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .logout {
+
+            flex: .2;
+            display: flex;
+            align-items: flex-end;
+            margin-right: 2rem;
+
+            .logout-btn {
+                width: 10rem;
+                text-align: left;
+                @include font-size($extra-small-font-size);
+                font-weight: $semiBold;
+
+                cursor: pointer;
+            }
+
+            .nav-icons {
+                width: 2rem;
+                margin-right: 1rem;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,58 @@
+@import './sass/variable.scss';
+@import './sass/mixin.scss';
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: $common-color;
+}
+
+ul{
+    list-style: none;
+}
+
+button,input{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+body{
+    background-color: $body-color;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./assets/images/background_image.svg');
+    background-repeat: no-repeat;
+    background-position: 0  -5vw;
+
+    background-size: contain;
+    @include device(md){
+    background-position: 0  -13vw;
+
+    }
+    @include device(lg){
+    background-position: 0  -10vw;
+
+    }
+    @include device(xl){
+    background-position: 0  -16vw;
+
+    }
+
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: $font-grey-color;
+    opacity: .5;
+    margin: 2rem 0;
+}

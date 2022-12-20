@@ -1,0 +1,44 @@
+@import '../../../../sass/mixin.scss';
+@import '../../../../sass/variable.scss';
+
+
+.scheduled-card-container {
+    background-color: $card-one-color;
+    width: 100%;
+    // min-width: 12rem;
+    height: 13rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $side-navigation-color;
+  
+    @include device(lg){
+       width: 16rem;
+        min-width: 10rem;
+        height: 16rem;
+    }
+    &:not(:last-child){
+        margin-right: 2rem
+    }
+
+    p {
+        @include font-size($regular-font-size);
+  
+    }
+
+    .brand {
+
+        img {
+            width: 3rem;
+            display: block;
+           
+        }
+        span{
+            @include font-size($small-font-size);
+            font-weight:$semiBold
+        
+        }
+    }
+}

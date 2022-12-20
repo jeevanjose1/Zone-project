@@ -1,0 +1,24 @@
+@import '../../../sass/mixin.scss';
+@import '../../../sass/variable.scss';
+
+
+
+
+.latest-spending-container{
+    .latest-spending{
+        .head{
+            display: flex;
+            justify-content: space-between;
+      
+            h3{
+                @include font-size($small-font-size);
+              
+            }
+            a{
+                @include font-size($small-font-size);
+                 color:$font-grey-color;
+            }
+        }
+       
+    }
+}

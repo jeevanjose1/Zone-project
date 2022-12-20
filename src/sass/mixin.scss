@@ -1,0 +1,93 @@
+//responsive font size
+
+$large-font-size:(
+  
+null  :5rem,
+576px : 4rem,
+992px : 5rem,
+1200px: 5rem
+
+);
+$medium-font-size:(
+null  : 3rem,
+576px : 3rem,
+992px : 3rem,
+1200px: 3rem
+
+);
+$regular-font-size:(
+null  : 1.5rem,
+576px : 1.5rem,
+992px :1.7rem,
+1200px: 1.7rem
+
+);
+$small-font-size:(
+null  : 1.2rem,
+576px : 1.2rem,
+992px : 1.4rem,
+1200px: 1.4rem
+
+);
+$extra-small-font-size:(
+null  : 1.4rem,
+576px : 1.4rem,
+992px : 1.4rem,
+1200px: 1.4rem
+
+);
+
+@mixin font-size ($fs-map) {
+
+    @each $breakpoint,
+    $font-size in $fs-map {
+
+        @if $breakpoint == null {
+            font-size: $font-size;
+        }
+
+        @else {
+            @media screen and (min-width:$breakpoint) {
+                font-size: $font-size;
+            }
+        }
+    }
+}
+
+
+// mixin media quries
+
+@mixin device ($breakpoint) { 
+  
+    @if $breakpoint == sm {    
+    @media only screen and (min-width: 576px) {
+      @content;
+    }
+  }
+ 
+  @if $breakpoint == md {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xxl {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xxxl {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+}
