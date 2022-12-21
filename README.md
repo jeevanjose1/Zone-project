@@ -42,7 +42,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-##Zone
+## Zone
 This is a frontend dashboard design created with react and sass
 
 
