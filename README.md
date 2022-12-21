@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Tech Stach Used
+## Tech Stack Used
   - React - A JavaScript library for building user interfaces
   - SASS for styling the project
 
