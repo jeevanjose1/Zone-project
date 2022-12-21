@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/zone-project/static/css/main.c63a32b0.css",
+    "main.js": "/zone-project/static/js/main.46531b3f.js",
+    "static/media/profile_picture.jpg": "/zone-project/static/media/profile_picture.34d49935dd246f6cd74c.jpg",
+    "static/media/profile1.jpg": "/zone-project/static/media/profile1.25d76a17904d06b8a932.jpg",
+    "static/media/logo.png": "/zone-project/static/media/logo.1c3ad84969a5a5870c03.png",
+    "static/media/profile4.jpg": "/zone-project/static/media/profile4.982f4b053da2e431a852.jpg",
+    "static/media/profile3.jpg": "/zone-project/static/media/profile3.7594d438cc636b1040dd.jpg",
+    "static/media/profile2.jpg": "/zone-project/static/media/profile2.5c72a8faa7910ce5eaf4.jpg",
+    "static/media/background_image.svg": "/zone-project/static/media/background_image.62bc30cdf72faed38520.svg",
+    "static/media/playstation.svg": "/zone-project/static/media/playstation.4da57d60e98e0243f7e07a32aa37372d.svg",
+    "static/media/discord.svg": "/zone-project/static/media/discord.ceb0cea8b799a335e4a98e9e663de731.svg",
+    "index.html": "/zone-project/index.html",
+    "static/media/Mastercard-Logo.svg": "/zone-project/static/media/Mastercard-Logo.a926ed912779093767a0cd8687855a5f.svg",
+    "static/media/wattpad.svg": "/zone-project/static/media/wattpad.ff96cf1df2b8f9be1029f7c391f3fbc7.svg",
+    "main.c63a32b0.css.map": "/zone-project/static/css/main.c63a32b0.css.map",
+    "main.46531b3f.js.map": "/zone-project/static/js/main.46531b3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c63a32b0.css",
+    "static/js/main.46531b3f.js"
+  ]
+}
