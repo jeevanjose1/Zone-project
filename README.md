@@ -1,6 +1,7 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Zone
+This is a frontend dashboard design created with react and sass
+
 
 ## Tech Stack Used
   - React - A JavaScript library for building user interfaces
@@ -41,8 +42,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
-
-## Zone
-This is a frontend dashboard design created with react and sass
-
 
